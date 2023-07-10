@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463F18282A5C5876006C59B6 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463F18272A5C5876006C59B6 /* AwardsView.swift */; };
+		463F182A2A5C5BD0006C59B6 /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463F18292A5C5BD0006C59B6 /* PathView.swift */; };
 		46A6A5852A58686600339DF8 /* AnimationCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6A5842A58686600339DF8 /* AnimationCollectionApp.swift */; };
 		46A6A5872A58686600339DF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6A5862A58686600339DF8 /* ContentView.swift */; };
 		46A6A5892A58686700339DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A6A5882A58686700339DF8 /* Assets.xcassets */; };
 		46A6A58C2A58686700339DF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A6A58B2A58686700339DF8 /* Preview Assets.xcassets */; };
 		46A6A5932A586B1D00339DF8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6A5922A586B1D00339DF8 /* MainView.swift */; };
 		46A6A5952A586DD800339DF8 /* CartRacingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6A5942A586DD800339DF8 /* CartRacingView.swift */; };
+		46A6A5972A586FC800339DF8 /* GradientRectangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6A5962A586FC800339DF8 /* GradientRectangles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		463F18272A5C5876006C59B6 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		463F18292A5C5BD0006C59B6 /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
 		46A6A5812A58686600339DF8 /* AnimationCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A6A5842A58686600339DF8 /* AnimationCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCollectionApp.swift; sourceTree = "<group>"; };
 		46A6A5862A58686600339DF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +28,7 @@
 		46A6A58B2A58686700339DF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46A6A5922A586B1D00339DF8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		46A6A5942A586DD800339DF8 /* CartRacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRacingView.swift; sourceTree = "<group>"; };
+		46A6A5962A586FC800339DF8 /* GradientRectangles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientRectangles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 				46A6A5842A58686600339DF8 /* AnimationCollectionApp.swift */,
 				46A6A5862A58686600339DF8 /* ContentView.swift */,
 				46A6A5922A586B1D00339DF8 /* MainView.swift */,
+				463F18292A5C5BD0006C59B6 /* PathView.swift */,
+				463F18272A5C5876006C59B6 /* AwardsView.swift */,
 				46A6A5942A586DD800339DF8 /* CartRacingView.swift */,
+				46A6A5962A586FC800339DF8 /* GradientRectangles.swift */,
 				46A6A5882A58686700339DF8 /* Assets.xcassets */,
 				46A6A58A2A58686700339DF8 /* Preview Content */,
 			);
@@ -144,6 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A6A5952A586DD800339DF8 /* CartRacingView.swift in Sources */,
+				46A6A5972A586FC800339DF8 /* GradientRectangles.swift in Sources */,
+				463F18282A5C5876006C59B6 /* AwardsView.swift in Sources */,
+				463F182A2A5C5BD0006C59B6 /* PathView.swift in Sources */,
 				46A6A5872A58686600339DF8 /* ContentView.swift in Sources */,
 				46A6A5932A586B1D00339DF8 /* MainView.swift in Sources */,
 				46A6A5852A58686600339DF8 /* AnimationCollectionApp.swift in Sources */,
