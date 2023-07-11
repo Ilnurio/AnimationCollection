@@ -12,23 +12,32 @@ struct MainView: View {
     
     var body: some View {
         VStack {
-            Button(action: { awardIsShowing.toggle() }) {
+            Button(action: { buttonAction() }) {
                 Text(awardIsShowing ? "Hide awards" : "Show Awards")
                 Spacer()
                 Image(systemName: "chevron.up.square")
                     .rotationEffect(.degrees(awardIsShowing ? 0 : 180))
-                    .animation(.default, value: awardIsShowing)
+                    .scaleEffect(awardIsShowing ? 2 : 1)
             }
             
             Spacer()
             
-            GradientRectangles()
-                .frame(width: 200, height: 200)
+            if awardIsShowing {
+                GradientRectangles()
+                    .frame(width: 200, height: 200)
+                    .transition(.scale)
+            }
             
             Spacer()
         }
         .font(.headline)
         .padding()
+    }
+    
+    private func buttonAction() {
+        withAnimation {
+            awardIsShowing.toggle()
+        }
     }
 }
 
