@@ -25,7 +25,7 @@ struct MainView: View {
             if awardIsShowing {
                 GradientRectangles()
                     .frame(width: 200, height: 200)
-                    .transition(.scale)
+                    .transition(.customTransition)
             }
             
             Spacer()
@@ -38,6 +38,16 @@ struct MainView: View {
         withAnimation {
             awardIsShowing.toggle()
         }
+    }
+}
+
+extension AnyTransition {
+    static var customTransition: AnyTransition {
+        let insertion = AnyTransition.move(edge: .leading)
+            .combined(with: .scale)
+        let removal = AnyTransition.move(edge: .trailing)
+            .combined(with: .scale)
+        return .asymmetric(insertion: insertion, removal: removal)
     }
 }
 
