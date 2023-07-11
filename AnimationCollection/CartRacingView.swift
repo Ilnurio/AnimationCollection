@@ -17,7 +17,47 @@ struct CartRacingView: View {
                     start: start,
                     title: "Default",
                     color: .red,
-                    animation: .default)
+                    animation: .default.speed(0.5)
+                )
+                CartView(
+                    start: start,
+                    title: "EaseOut",
+                    color: .green,
+                    animation: .easeOut(duration: 0.7)
+                )
+                CartView(
+                    start: start,
+                    title: "EaseIn",
+                    color: .yellow,
+                    animation: .easeIn(duration: 0.7)
+                )
+                CartView(
+                    start: start,
+                    title: "EaseInOut",
+                    color: .blue,
+                    animation: .easeInOut(duration: 0.7)
+                )
+                CartView(
+                    start: start,
+                    title: "Int-ing Spring",
+                    color: .brown,
+                    animation: .interpolatingSpring(
+                        mass: 1,
+                        stiffness: 100,
+                        damping: 10,
+                        initialVelocity: 0
+                    )
+                )
+                CartView(
+                    start: start,
+                    title: "Spring",
+                    color: .orange,
+                    animation: .spring(
+                        response: 0.55,
+                        dampingFraction: 0.45,
+                        blendDuration: 0
+                    )
+                )
             }
             
             Spacer()
@@ -45,7 +85,7 @@ struct CartView: View {
             Image(systemName: "cart.fill")
                 .font(.title)
                 .foregroundColor(color)
-                .offset(x: start ? UIScreen.main.bounds.width - 50 : 0)
+                .offset(x: start ? UIScreen.main.bounds.width - 80 : 0)
                 .animation(animation, value: start)
             Text(title)
         }
