@@ -13,12 +13,11 @@ struct CartRacingView: View {
     var body: some View {
         HStack {
             VStack(spacing: 10) {
-                VStack {
-                    Image(systemName: "cart.fill")
-                        .font(.title)
-                        .foregroundColor(.red)
-                    Text("Default")
-                }
+                CartView(
+                    start: start,
+                    title: "Default",
+                    color: .red,
+                    animation: .default)
             }
             
             Spacer()
@@ -26,12 +25,29 @@ struct CartRacingView: View {
         .onTapGesture {
             start.toggle()
         }
-        .padding()
     }
 }
 
 struct CartRacingView_Previews: PreviewProvider {
     static var previews: some View {
         CartRacingView()
+    }
+}
+
+struct CartView: View {
+    let start: Bool
+    let title: String
+    let color: Color
+    let animation: Animation
+    
+    var body: some View {
+        VStack {
+            Image(systemName: "cart.fill")
+                .font(.title)
+                .foregroundColor(color)
+                .offset(x: start ? UIScreen.main.bounds.width - 50 : 0)
+                .animation(animation, value: start)
+            Text(title)
+        }
     }
 }
