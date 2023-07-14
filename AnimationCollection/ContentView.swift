@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    var start = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            MainView()
+                .tabItem {
+                    Image(systemName: "pawprint.fill")
+                    Text("My Award")
+                }
+            AwardsView()
+                .tabItem {
+                    Image(systemName: "star")
+                    Text("Awards")
+                }
+            CartRacingView()
+            .tabItem {
+                Image(systemName: "cart")
+                Text("CartRacing")
+            }
         }
-        .padding()
     }
 }
 

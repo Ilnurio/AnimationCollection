@@ -44,6 +44,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		464A39782A61CAC30063F721 /* AwardsView */ = {
+			isa = PBXGroup;
+			children = (
+				463F18292A5C5BD0006C59B6 /* PathView.swift */,
+				46B9C8E72A5DA90400E01D7A /* CurvesView.swift */,
+				46A6A5962A586FC800339DF8 /* GradientRectangles.swift */,
+			);
+			path = AwardsView;
+			sourceTree = "<group>";
+		};
 		46A6A5782A58686600339DF8 = {
 			isa = PBXGroup;
 			children = (
@@ -66,11 +76,9 @@
 				46A6A5842A58686600339DF8 /* AnimationCollectionApp.swift */,
 				46A6A5862A58686600339DF8 /* ContentView.swift */,
 				46A6A5922A586B1D00339DF8 /* MainView.swift */,
-				463F18292A5C5BD0006C59B6 /* PathView.swift */,
 				463F18272A5C5876006C59B6 /* AwardsView.swift */,
 				46A6A5942A586DD800339DF8 /* CartRacingView.swift */,
-				46A6A5962A586FC800339DF8 /* GradientRectangles.swift */,
-				46B9C8E72A5DA90400E01D7A /* CurvesView.swift */,
+				464A39782A61CAC30063F721 /* AwardsView */,
 				46A6A5882A58686700339DF8 /* Assets.xcassets */,
 				46A6A58A2A58686700339DF8 /* Preview Content */,
 			);
